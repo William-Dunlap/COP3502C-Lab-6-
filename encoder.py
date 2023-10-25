@@ -5,7 +5,11 @@
 
 
 def main():
-    pass
+    password = input("Enter password: ")
+    for i in range(0, len(password) - 1):
+        num = password[i]
+        print(f"{int(num) + 3}", end="")
 
 
-main()
+if __name__ == '__main__':
+    main()
