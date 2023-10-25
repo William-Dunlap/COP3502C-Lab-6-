@@ -7,8 +7,13 @@
 def main():
     password = input("Enter password: ")
     for i in range(0, len(password) - 1):
-        num = password[i]
-        print(f"{int(num) + 3}", end="")
+        num = int(password[i])
+        num += 3
+        if num >= 10:
+            num -= 10
+            print(f"{num}", end="")
+        else:
+            print(f"{num}", end="")
 
 
 if __name__ == '__main__':
