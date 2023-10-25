@@ -18,8 +18,11 @@ def encode():
         return result
 
 
-def decode():
-    pass
+def decode(password):
+    result = ""
+    for i in str(password):
+        result += str(int(i)-3)[-1]
+    return result
 
 
 def main():
@@ -32,7 +35,7 @@ def main():
             encoded = encode()
             print("Your password has been encoded and stored!")
         elif option == 2:
-            decoded = decode()
+            decoded = decode(encoded)
             print(f"The encoded password is {encoded}, and the original password is {decoded}.")
         elif option == 3:
             quit()
