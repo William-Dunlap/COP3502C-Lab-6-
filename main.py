@@ -21,7 +21,7 @@ def encode():
 def decode(password):
     result = ""
     for i in str(password):
-        result += str(int(i)-3)[-1]
+        result += str(int(i)+17)[-1]
     return result
 
 
