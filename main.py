@@ -15,7 +15,7 @@ def encode():
             result = result + str(num)
         else:
             result = result + str(num)
-        return result
+    return result
 
 
 def decode(password):
@@ -26,11 +26,12 @@ def decode(password):
 
 
 def main():
+    encoded = ""
+    decoded = ""
     while True:
         print(f"\nMenu \n-------------")
         print(f"1. Encode \n2. Decode \n3. Quit\n")
         option = int(input("Please enter an option: "))
-        encoded = ""
         if option == 1:
             encoded = encode()
             print("Your password has been encoded and stored!")
