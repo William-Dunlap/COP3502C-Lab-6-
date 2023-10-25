@@ -6,7 +6,7 @@
 
 def main():
     password = input("Enter password: ")
-    for i in range(0, len(password) - 1):
+    for i in range(0, len(password)):
         num = int(password[i])
         num += 3
         if num >= 10:
